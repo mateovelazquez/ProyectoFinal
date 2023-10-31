@@ -1,0 +1,23 @@
+Desafío =
+
+Crear un modelo de Schema de mongoose donde se estructuren posts. Estos deberán tener las siguientes propiedades:
+title (string - requerido)
+description 
+markdown (string - requerido)
+createdAt
+slug (string - requerido)
+sanitizedHtml (string - requerido)
+
+Crear una carpeta llamada routes donde contenga un archivo articles.js con las siguientes rutas para realizar un crud.
+const Article = require(“./models/article”)
+GET “/new”
+GET “/edit/:id”
+POST “/”
+PUT “/:id”
+DELETE “/:id”
+
+	app.js
+
+	const articleRouter = require (“./”)
+
+	app.use(“/articles”, articleRouter)
